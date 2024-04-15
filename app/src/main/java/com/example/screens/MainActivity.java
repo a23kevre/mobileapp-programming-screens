@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("==>","Vi har klickat");
                 Intent second = new Intent(MainActivity.this, SecondActivity.class);
+                second.putExtra("text", "SecondActivity");
                 startActivity(second);
             }
         });
